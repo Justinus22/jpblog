@@ -1,0 +1,152 @@
+/* .header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3399ff;
+} */
+a {
+  text-decoration: none;
+}
+
+.nav{
+  background: rgb(110,94,254);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navmenu{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+
+  list-style: none;
+  text-align: center;
+  width: 50vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+
+.titlediv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  font-size: 2rem;
+  padding: 0 2rem;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.titlelink{
+  color: white;
+
+  font-weight: bold;
+  margin: auto;
+}
+
+.autor{
+  font-size: 1rem;
+
+  color: white;
+
+  font-weight: bold;
+  margin: auto;
+
+  padding: 0.5rem 2rem;
+}
+
+
+.navel{
+  color: white;
+
+  font-weight: bold;
+  margin: auto;
+
+  padding: 0.5rem 2rem;
+}
+
+.navel:hover{
+  background-color: #6d76f7;
+  background-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.fa-bars{
+  color: white;
+}
+
+.menuicon{
+  display: none;
+}
+
+.bloglink{
+  font-size: 2rem;
+}
+.account{
+  font-size: 2rem;
+}
+
+
+
+
+/* For Mobile */
+
+
+@media screen and (max-width: 800px) {
+  .nav{
+    position: relative;
+  }
+
+  .navmenu{
+    display: flex;
+    flex-direction: column;
+    width: 100vW;
+    height: 250px;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    padding: 0;
+  }
+  .navmenu.active{
+    background: #6E5EFE;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .navel{
+    text-align: center;
+    padding: 2rem;
+    display: table;
+  }
+  .navel:hover{
+    background-color: #7577fa;
+    border-radius: 0;
+  }
+  .menuicon{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .fa-times{
+    color: white;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .autor{
+    display: none;
+  }
+}
