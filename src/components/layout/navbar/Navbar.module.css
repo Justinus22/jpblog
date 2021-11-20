@@ -11,8 +11,8 @@ a {
 }
 
 .nav{
-  background: rgb(110,94,254);
-  height: 80px;
+  background: rgba(176,49,63,255);
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,8 +72,8 @@ a {
 }
 
 .navel:hover{
-  background-color: #6d76f7;
   background-radius: 4px;
+  background-color: rgba(188,85,97,255);
   transition: all 0.2s ease-out;
 }
 
@@ -116,7 +116,7 @@ a {
     padding: 0;
   }
   .navmenu.active{
-    background: #6E5EFE;
+    background: rgba(176,49,63,255);
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -128,7 +128,7 @@ a {
     display: table;
   }
   .navel:hover{
-    background-color: #7577fa;
+    background-color: rgba(188,85,97,255);
     border-radius: 0;
   }
   .menuicon{

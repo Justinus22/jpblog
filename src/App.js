@@ -4,19 +4,20 @@ import Layout from "./components/layout/Layout"
 
 
 import BlogPage from "./pages/BlogPage"
+import Account from "./pages/Account"
 
 function App() {
   return (
     <Layout>
         <Switch>
           <Route path="/" exact>
-              <BlogPage />
+              Welcome
           </Route>
           <Route path="/blog" exact>
-              Blog
+              <BlogPage />
           </Route>
           <Route path="/account">
-              Log In
+              <Account />
           </Route>
         </Switch>
     </Layout>

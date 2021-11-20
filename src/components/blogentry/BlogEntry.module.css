@@ -1,0 +1,39 @@
+.entry{
+  width: 90%;
+  margin-top: 5vH;
+}
+
+.title{
+  text-align: center;
+  font-size: 4rem;
+  color: rgba(176,49,63,255);
+
+  transition-duration: 0.5s;
+}
+
+.text{
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.date{
+  position: absolute;
+  right: 10%;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 500px){
+  .title{
+    font-size: 2rem;
+  }
+
+  .text{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .date{
+    opacity: 0;
+  }
+}

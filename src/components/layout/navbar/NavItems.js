@@ -5,7 +5,7 @@ export const NavItems = [
     cName: "bloglink"
   },
   {
-    title: "Log In",
+    title: "Account",
     url: "/account",
     cName: "account"
   }
