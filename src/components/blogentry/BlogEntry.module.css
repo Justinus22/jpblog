@@ -1,6 +1,8 @@
 .entry{
-  width: 90%;
-  margin-top: 5vH;
+  width: 80%;
+  text-align: justify;
+  margin: auto;
+  padding-bottom: 2vH;
 }
 
 .title{
@@ -12,7 +14,7 @@
 }
 
 .text{
-  text-align: center;
+  text-align: inherit;
   font-size: 1.4rem;
 }
 

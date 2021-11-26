@@ -17,7 +17,7 @@ function BlogEntry(props) {
         </div>
       </div>
     </Card>
-
+ 
   );
 }
 

@@ -1,0 +1,26 @@
+.page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  color: rgba(176,49,63,255);
+  font-size: 3rem;
+
+  position: relative;
+}
+
+.info{
+  color: rgba(176,49,63,255);
+  font-size: 2rem;
+
+  position: relative;
+}
+
+.loginlink{
+  margin-top: 50vH;
+}
+
+/* rgba(176,49,63,255) */

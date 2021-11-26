@@ -1,11 +1,10 @@
 import { getDatabase, ref, child, get } from "firebase/database";
 import { useState } from "react"
 
-import giveFirebaseApp from "../firebase/initfirebase.js"
+import app from "../firebase/initfirebase.js"
 import BlogEntry from "../components/blogentry/BlogEntry"
 
 function BlogPage(props) {
-  const app = giveFirebaseApp();
   const database = getDatabase(app);
 
   const [entries, setEntries] = useState({});

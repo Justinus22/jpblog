@@ -4,9 +4,14 @@ export const NavItems = [
     url: "/blog",
     cName: "bloglink"
   },
+  // {
+  //   title: "Account",
+  //   url: "/account",
+  //   cName: "account"
+  // },
   {
-    title: "Account",
-    url: "/account",
-    cName: "account"
+    title: "Contact",
+    url: "/contact",
+    cName: "contact"
   }
 ]

@@ -1,25 +1,24 @@
-
+import { useContext } from "react"
 import { getDatabase, ref, set} from "firebase/database";
 
-import giveFirebaseApp from "../firebase/initfirebase.js"
+import app from "../firebase/initfirebase.js"
+import { AuthContext } from "../context/Auth"
+
+import LogIn from "./account/LogIn"
+import InAccount from "./account/InAccount"
 
 function Account() {
-  const app = giveFirebaseApp();
-  const database = getDatabase(app);
+  const {currentUser} = useContext(AuthContext);
 
-  function writeNewEntry(db, title, text, pics) {
-    const time = new Date();
-    set(ref(db, 'entries/' + time.getTime()), {
-      title: 'Another Tset',
-      text: 'I hope this text will work just fine as i want it to work. This will be great! dada',
-      pics: []
-    });
-}
+
+  if(currentUser){
+    return (
+      <InAccount />
+    );
+  }
 
   return (
-    <div>
-      <button onClick={() => writeNewEntry(database, '', '', [])}> set data </button>
-    </div>
+    <LogIn />
   );
 }
 

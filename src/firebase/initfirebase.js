@@ -1,11 +1,8 @@
 import firebaseConfig from "./config"
-import { initializeApp } from "firebase/app";
 
-function giveFirebaseApp() {
-  return initializeApp(firebaseConfig);
-}
+import firebase from "firebase/compat/app"
+import "firebase/compat/auth";
 
+export const app = firebase.initializeApp(firebaseConfig);
 
-const app = giveFirebaseApp();
-
-export default giveFirebaseApp;
+export default app;
